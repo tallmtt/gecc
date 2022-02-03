@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- (A) TITLE + CHARSET + DESCRIPTION -->
+    <title>Good Enough Calorie Counter</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A calorie counter that is good enough">
+
+    <!-- (B) VIEWPORT (ALLOW ZOOM IN, NOT OUT) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+
+    <!-- (C) WEB APP MANIFEST -->
+    <!-- https://web.dev/add-manifest/ -->
+    <link rel="manifest" href="gecc-manifest.json">
+
+    <!-- (D) GOOD OLD FAVICON -->
+    <link rel="icon" href="gecc-favicon.png" type="image/png">
+
+    <!-- (E) ANDROID/CHROME -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="white">
+
+    <!-- (F) IOS APP ICON + MOBILE SAFARI -->
+    <link rel="apple-touch-icon" href="gecc-icon-512.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Hello World">
+
+    <!-- (G) WINDOWS -->
+    <meta name="msapplication-TileImage" content="gecc-icon-512.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!-- (H) STYLESHEET + JAVASCRIPT -->
+    <link rel="stylesheet" href="gecc-style.css">
+    <script defer src="gecc-main.js"></script>
+  </head>
+  <body>
+	<center>
+		<h1>GECC</h1>
+		<p>(a Good Enough Calorie Counter!)</p>
+		<p id="today"></p>
+	</center>
+	<div>
+		<center>
+			<h2>Calories Consumed:</h2>
+			<h2><a id="calories"></a></h2>
+		</center>
+	</div>
+	<center>
+		<div>
+			<button type="button" onClick="upCals()">+100 calories</button>
+			<button type="button" onClick="downCals()">-100 calories</button>
+		</div>
+		<div>
+			<button type="button" onClick="resetCals()">Reset Calories</button>
+		</div>
+	</center>
+
+  </body>
+</html>
