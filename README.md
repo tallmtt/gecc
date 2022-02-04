@@ -7,6 +7,8 @@ Use: python3 -m http.server 8000
 
 ## Figure out:
 - [ ] License - make public source
+    - https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository
+    - https://choosealicense.com/
 
 ### Implemented
 - [x] Add Goal daily calories
