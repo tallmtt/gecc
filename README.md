@@ -8,11 +8,16 @@ Use: python3 -m http.server 8000
 
 ## Things to implement
 
-- New date -> Reset counter to 0
-- Not allow negative count
-- Add Goal daily calories
-- Edit goal daily calories
-- Function for calories remaining
-- Link to easy reference - make simple one?
-- Make sure mobile friendly
-- Installableness
+- [ ] Installableness
+- [-] Make sure mobile friendly - could be improved
+
+### Implemented
+- [x] Add Goal daily calories
+- [x] Edit goal daily calories
+- [x] Function for calories remaining
+- [x] Not allow negative count
+- [x] New date -> Reset counter to 0
+
+## Consider adding:
+- [ ] Add over/under for past 7 days
+- [ ] Link to easy reference - make simple one - table popup reference

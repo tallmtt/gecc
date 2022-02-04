@@ -35,25 +35,34 @@
     <script defer src="gecc-main.js"></script>
   </head>
   <body>
-	<center>
-		<h1>GECC</h1>
-		<p>(a Good Enough Calorie Counter!)</p>
-		<p id="today"></p>
-	</center>
+	<div>
+        <center>
+            <h1>GECC</h1>
+            <p>(a Good Enough Calorie Counter!)</p>
+            <p id="today"></p>
+            <p>Daily Calorie Goal: <span id="goal"></span></p>
+            <p>Remaining Calories: <span id="remaining"></span></p>
+        </center>
+	</div>
 	<div>
 		<center>
-			<h2>Calories Consumed:</h2>
-			<h2><a id="calories"></a></h2>
+			<h3>Calories Consumed:</h3>
+			<h1><a id="calories"></a></h1>
 		</center>
 	</div>
 	<center>
 		<div>
-			<button type="button" onClick="upCals()">+100 calories</button>
-			<button type="button" onClick="downCals()">-100 calories</button>
+			<button type="button" class="controls" onClick="upCals()">+100 calories</button>
+<!--		</div>
+		<div id="controls">-->
+            <button type="button" class="controls" onClick="downCals()">-100 calories</button>
 		</div>
-		<div>
+		<hr>
+		<div id="admin">
 			<button type="button" onClick="resetCals()">Reset Calories</button>
+			<button type="button" onClick="editGoal()">Edit Goal</button>
 		</div>
+
 	</center>
 
   </body>
