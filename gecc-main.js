@@ -9,11 +9,23 @@ localStorage.today = today;
 document.getElementById("today").innerHTML = today;
 // Initialize dataData
 if (localStorage.today == localStorage.date) {
-    cals = localStorage.getItem.cals
+    cals = parseInt(localStorage.getItem.cals)
+//} else (cals == null ) {
+//    localStorage.setItem('cals', 0);
 } else {
     localStorage.setItem('cals', 0);
     localStorage.date = today;
 }    
+
+// Most recent weight
+var wt = localStorage.getItem('wt')
+//localStorage.setItem('wt',200) // For debug purposes
+if (localStorage.getItem('wt')) {
+	var mrw = "<p>Most recent weight: <span id='wt'>" + localStorage.getItem('wt') + "</span></p>"
+    document.getElementById("mrw").innerHTML = mrw;
+} else {
+	document.getElementById("mrw").innerHTML = "<p class='hidden'></p>";
+}
 
 // Goal daily calories
 var goal = parseInt(localStorage.getItem('goal'))
@@ -24,10 +36,6 @@ if (localStorage.getItem('goal') === null) {
     localStorage.setItem('cals', 0);
 }
 document.getElementById("goal").innerHTML = goal;
-
-// Set initial remaining calories for the day
-let remaining = (localStorage.getItem('goal') - localStorage.getItem('cals'))
-document.getElementById("remaining").innerHTML = remaining;
 
 // Edit daily goal calories
 function editGoal() {
@@ -42,10 +50,23 @@ function editGoal() {
     }
 };
 
+// Set initial remaining calories for the day
+let remaining = (localStorage.getItem('goal') - localStorage.getItem('cals'))
+document.getElementById("remaining").innerHTML = remaining;
+
 // Use local storage for cal value
 var cals = parseInt(localStorage.getItem('cals'))
 //var initcals = localStorage.getItem('cals')
 document.getElementById("calories").innerHTML = cals;
+
+// Add 50 calories
+function up50Cals() {
+  cals += 50;
+  document.getElementById("calories").innerHTML = cals;
+  // Inserting listData into localStorage.
+  localStorage.cals  = cals;
+  calcRemaining();
+};
 
 // Add 100 calories
 function upCals() {
@@ -58,7 +79,7 @@ function upCals() {
 
 // Subtract 100 calories
 function downCals() {
-    if (cals > 0) {
+    if (cals > 99) {
         cals -= 100;
         document.getElementById("calories").innerHTML = cals;
         // Inserting listData into localStorage.
@@ -83,3 +104,11 @@ function calcRemaining() {
   let remaining = (localStorage.getItem('goal') - localStorage.getItem('cals'));
   document.getElementById("remaining").innerHTML = remaining;    
 }
+
+// Enter most recent weight
+function addWeight() {
+    let wt = prompt("Please enter your most recent weight:");
+    localStorage.wt  = wt;
+	var mrw = "<p>Most recent weight: <span id='wt'>" + localStorage.getItem('wt') + "</span></p>"
+    document.getElementById("mrw").innerHTML = mrw;
+};

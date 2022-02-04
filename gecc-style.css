@@ -11,8 +11,13 @@ body {
   color: #fff;
 }
 
+.hidden {
+	display: none;
+}
+
 h1 {
     text-shadow: 2px 2px 5px grey;
+	text-decoration: underline;
 }
 
 h3 {
@@ -21,7 +26,22 @@ h3 {
     font-variant: small-caps;
 }
 
+#box-data {
+  border-radius: 25px;
+  border: 2px solid #000;
+  background: #D3D3D3; /* Gunmetal */
+  color: #2c3539;
+/*  padding: 20px; */
+  width: 250px; 
+/*  height: 150px;  */
+}
+
 #today {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#wt {
     font-weight: bold;
     font-size: 1.3em;
 }
@@ -37,7 +57,8 @@ h3 {
 }
 
 #calories {
-    font-size: 1.7em;
+    font-size: 4em;
+	text-shadow: 2px 2px 5px grey;
 }
 
 .controls {
@@ -46,6 +67,7 @@ h3 {
   border-radius: 12px;
   color: white;
   padding: 15px 32px;
+  margin:5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

@@ -38,31 +38,37 @@
 	<div>
         <center>
             <h1>GECC</h1>
-            <p>(a Good Enough Calorie Counter!)</p>
+            <p>(a Good Enough Calorie Counter)</p>
             <p id="today"></p>
-            <p>Daily Calorie Goal: <span id="goal"></span></p>
-            <p>Remaining Calories: <span id="remaining"></span></p>
+			<div id='box-data'>
+				<span id='mrw'></span>
+				<p>Daily Calorie Goal: <span id="goal"></span></p>
+				<p>Remaining Calories: <span id="remaining"></span></p>
+			</div>
         </center>
 	</div>
 	<div>
 		<center>
 			<h3>Calories Consumed:</h3>
-			<h1><a id="calories"></a></h1>
+			<a id="calories"></a>
 		</center>
 	</div>
 	<center>
 		<div>
+			<button type="button" class="controls" onClick="up50Cals()">+50 calories</button>
 			<button type="button" class="controls" onClick="upCals()">+100 calories</button>
-<!--		</div>
-		<div id="controls">-->
-            <button type="button" class="controls" onClick="downCals()">-100 calories</button>
 		</div>
-		<hr>
-		<div id="admin">
+		<br>
+		<div>
+            <button type="button" onClick="downCals()">-100 calories</button>
 			<button type="button" onClick="resetCals()">Reset Calories</button>
+<!--			<button type="button" onClick="editGoal()">Edit Goal</button> -->
+		</div>
+		<br>
+		<div>
+			<button type="button" onClick="addWeight()">Edit Weight</button>
 			<button type="button" onClick="editGoal()">Edit Goal</button>
 		</div>
-
 	</center>
 
   </body>
