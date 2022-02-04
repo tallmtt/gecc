@@ -8,6 +8,7 @@ Use: python3 -m http.server 8000
 ## Things to implement
 
 - [ ] Installableness
+- [ ] Add most recent weight
 - [-] Make sure mobile friendly - could be improved
 
 ### Implemented
