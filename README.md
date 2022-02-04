@@ -5,7 +5,6 @@ Good Enough Calorie Counter
 
 Use: python3 -m http.server 8000
 
-
 ## Things to implement
 
 - [ ] Installableness
@@ -18,6 +17,10 @@ Use: python3 -m http.server 8000
 - [x] Not allow negative count
 - [x] New date -> Reset counter to 0
 
+## Figure out:
+- [ ] License - make public source
+
 ## Consider adding:
 - [ ] Add over/under for past 7 days
 - [ ] Link to easy reference - make simple one - table popup reference
+
