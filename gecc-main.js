@@ -20,6 +20,7 @@ var goal = parseInt(localStorage.getItem('goal'))
 // Set default goal and calories for initial view
 if (localStorage.getItem('goal') === null) {
     localStorage.setItem('goal', 1500);
+    document.getElementById("goal").innerHTML = goal;
     localStorage.setItem('cals', 0);
 }
 document.getElementById("goal").innerHTML = goal;
