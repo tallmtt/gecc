@@ -5,10 +5,12 @@ Good Enough Calorie Counter
 
 Use: python3 -m http.server 8000
 
-## Figure out:
+## Figure out/Add:
 - [ ] License - make public source
     - https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository
     - https://choosealicense.com/
+- [ ] "?" with portion sizes and calorie reference guide at bottom right corner
+    - Previous idea: Link to easy reference - make simple one - table popup reference
 
 ### Implemented
 - [x] Add Goal daily calories
@@ -21,8 +23,8 @@ Use: python3 -m http.server 8000
 - [x] Make sure mobile friendly
 
 ## Consider adding:
-- [ ] Link to easy reference - make simple one - table popup reference
-- [ ] Add over/under for past 7 days
+- Push reminder to exercise at a certain time
+- Add over/under for past 7 days
 
 ### Manifest notes
 name: The full name of your web app.
