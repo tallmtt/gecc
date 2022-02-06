@@ -40,8 +40,8 @@ See: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installab
 
 # Copyright - GPL3
 
-<one line to give the program's name and a brief idea of what it does.>
-    Copyright (C) <year>  <name of author>
+    Good Enough Calorie Counter
+    Copyright (C) 2022  Matthew Rensberry <tallmtt@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -55,5 +55,3 @@ See: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installab
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-Also add information on how to contact you by electronic and paper mail.
