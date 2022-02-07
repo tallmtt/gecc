@@ -80,10 +80,60 @@ h3 {
   transform: translateY(2px);
 }
 
-.org-left {
-    
+.org-left, .org-right {
+    width: 30%;
+	text-align: center;
 }
 
-.org-right {
-    
+#table th{
+	font-size: 1.2em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+/*  background-color: #f1f1f1; */
+  background-color: whitesmoke;
+  border: 1px solid #555;
+}
+
+li a {
+  display: block;
+  color: #2c3539;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/*
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+*/
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: whitesmoke;
+}
+
+a.reglinks {
+	display: inline-block;
+	color: #2c3539;
+	padding: 1em;
+	margin: 1em;
+	background-color: whitesmoke;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
 }

@@ -6,7 +6,7 @@ Good Enough Calorie Counter
 Use: python3 -m http.server 8000
 
 ## Figure out/Add:
-- [ ] License - make public source
+- [x] License - make public source
     - https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository
     - https://choosealicense.com/
 - [ ] "?" with portion sizes and calorie reference guide at bottom right corner
