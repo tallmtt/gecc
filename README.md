@@ -22,11 +22,8 @@ Use: python3 -m http.server 8000
     - https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository
     - https://choosealicense.com/
 
-## Consider adding:
-- Push reminder to exercise at a certain time
-- Add over/under for past 7 days
-
 ### Manifest notes
+
 name: The full name of your web app.
 short_name: Short name to be shown on the home screen.
 description: A sentence or two explaining what your app does.
