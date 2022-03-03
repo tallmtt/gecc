@@ -136,4 +136,11 @@ a.reglinks {
 	padding: 14px 25px;
 	text-align: center;
 	text-decoration: none;
+	position: sticky;
+	bottom: 30px;
+	right: 30px;
+}
+
+.reference {
+	text-align: center;
 }
