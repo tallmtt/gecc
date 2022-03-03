@@ -115,13 +115,6 @@ li:last-child {
   border-bottom: none;
 }
 
-/*
-li a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-*/
-
 li a:hover:not(.active) {
   background-color: #555;
   color: whitesmoke;
@@ -137,7 +130,8 @@ a.reglinks {
 	text-align: center;
 	text-decoration: none;
 	position: sticky;
-	bottom: 30px;
+	position: -webkit-sticky;
+  	bottom: 30px;
 	right: 30px;
 }
 
