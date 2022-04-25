@@ -1,5 +1,5 @@
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("gecc-sw.js");
+  navigator.serviceWorker.register("sw.js");
 }
 
 // Date
@@ -8,32 +8,32 @@ let today = new Date().toLocaleDateString()
 localStorage.today = today;
 document.getElementById("today").innerHTML = today;
 // Initialize dataData
-if (localStorage.today == localStorage.date) {
-    cals = parseInt(localStorage.getItem.cals)
+if (localStorage.today == localStorage.geccDate) {
+    cals = parseInt(localStorage.getItem.geccCals)
 //} else (cals == null ) {
 //    localStorage.setItem('cals', 0);
 } else {
-    localStorage.setItem('cals', 0);
-    localStorage.date = today;
+    localStorage.setItem('geccCals', 0);
+    localStorage.geccDate = today;
 }    
 
 // Most recent weight
-var wt = localStorage.getItem('wt')
+var wt = localStorage.getItem('geccWeight')
 //localStorage.setItem('wt',200) // For debug purposes
-if (localStorage.getItem('wt')) {
-	var mrw = "<p>Most recent weight: <span id='wt'>" + localStorage.getItem('wt') + "</span></p>"
+if (localStorage.getItem('geccWeight')) {
+	var mrw = "<p>Most recent weight: <span id='wt'>" + localStorage.getItem('geccWeight') + "</span></p>"
     document.getElementById("mrw").innerHTML = mrw;
 } else {
 	document.getElementById("mrw").innerHTML = "<p class='hidden'></p>";
 }
 
 // Goal daily calories
-var goal = parseInt(localStorage.getItem('goal'))
+var goal = parseInt(localStorage.getItem('geccGoal'))
 // Set default goal and calories for initial view
-if (localStorage.getItem('goal') === null) {
-    localStorage.setItem('goal', 1500);
-    document.getElementById("goal").innerHTML = goal;
-    localStorage.setItem('cals', 0);
+if (localStorage.getItem('geccGoal') === null) {
+    localStorage.setItem('geccGoal', 1500);
+    document.getElementById("geccGoal").innerHTML = goal;
+    localStorage.setItem('geccCals', 0);
 }
 document.getElementById("goal").innerHTML = goal;
 
@@ -41,7 +41,7 @@ document.getElementById("goal").innerHTML = goal;
 function editGoal() {
     let goal = prompt("Please enter your daily calorie goal:", localStorage.getItem('goal'));
     if (goal > 799) {
-        localStorage.goal  = goal;
+        localStorage.geccGoal  = goal;
         document.getElementById("goal").innerHTML = goal;
         calcRemaining();
     } else {
@@ -51,11 +51,11 @@ function editGoal() {
 };
 
 // Set initial remaining calories for the day
-let remaining = (localStorage.getItem('goal') - localStorage.getItem('cals'))
+let remaining = (localStorage.getItem('geccGoal') - localStorage.getItem('geccCals'))
 document.getElementById("remaining").innerHTML = remaining;
 
 // Use local storage for cal value
-var cals = parseInt(localStorage.getItem('cals'))
+var cals = parseInt(localStorage.getItem('geccCals'))
 //var initcals = localStorage.getItem('cals')
 document.getElementById("calories").innerHTML = cals;
 
@@ -64,7 +64,7 @@ function up50Cals() {
   cals += 50;
   document.getElementById("calories").innerHTML = cals;
   // Inserting listData into localStorage.
-  localStorage.cals  = cals;
+  localStorage.geccCals  = cals;
   calcRemaining();
 };
 
@@ -73,7 +73,7 @@ function upCals() {
   cals += 100;
   document.getElementById("calories").innerHTML = cals;
   // Inserting listData into localStorage.
-  localStorage.cals  = cals;
+  localStorage.geccCals  = cals;
   calcRemaining();
 };
 
@@ -83,7 +83,7 @@ function downCals() {
         cals -= 100;
         document.getElementById("calories").innerHTML = cals;
         // Inserting listData into localStorage.
-        localStorage.cals  = cals;
+        localStorage.geccCals  = cals;
         calcRemaining();
     } else {
         alert('You cannot consume less than 0 calories!');
@@ -95,20 +95,20 @@ function resetCals() {
   cals = 0;
   document.getElementById("calories").innerHTML = cals;
   // Inserting listData into localStorage.
-  localStorage.cals  = cals;
+  localStorage.geccCals  = cals;
   calcRemaining();
 };
 
 // Calculate remaining calories for the day
 function calcRemaining() {
-  let remaining = (localStorage.getItem('goal') - localStorage.getItem('cals'));
+  let remaining = (localStorage.getItem('geccGoal') - localStorage.getItem('geccCals'));
   document.getElementById("remaining").innerHTML = remaining;    
 }
 
 // Enter most recent weight
 function addWeight() {
     let wt = prompt("Please enter your most recent weight:");
-    localStorage.wt  = wt;
-	var mrw = "<p>Most recent weight: <span id='wt'>" + localStorage.getItem('wt') + "</span></p>"
+    localStorage.geccWeight  = wt;
+	var mrw = "<p>Most recent weight: <span id='wt'>" + localStorage.getItem('geccWeight') + "</span></p>"
     document.getElementById("mrw").innerHTML = mrw;
 };

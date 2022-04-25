@@ -2,10 +2,10 @@
 const cName = "gecc",
 
 cFiles = [
-  "gecc-index.html",
-  "gecc-style.css",
-  "gecc-main.js",
-  "gecc-reference.html"
+  "index.html",
+  "style.css",
+  "main.js",
+  "reference.html"
 ];
 
 // (B) CREATE/INSTALL CACHE

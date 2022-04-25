@@ -10,7 +10,7 @@
     "sizes": "512x512",
     "type": "image/png"
   }],
-  "start_url": "gecc-index.html",
+  "start_url": "index.html",
   "scope": "/",
   "background_color": "#2c3539",
   "theme_color": "#2c3539",
