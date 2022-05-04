@@ -5,7 +5,7 @@ cFiles = [
   "index.html",
   "style.css",
   "main.js",
-  "reference.html"
+  "gecc-reference.html"
 ];
 
 // (B) CREATE/INSTALL CACHE
