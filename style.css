@@ -138,3 +138,166 @@ a.reglinks {
 .reference {
 	text-align: center;
 }
+
+a {
+	color: white;
+}
+
+/* -------------------------- */
+/* -- For Fat Secret stuff -- */
+/* -------------------------- */
+
+.fatsecret_subheading.fatsecret_home_heading {
+    display: none;
+}
+
+.fatsecret_home_summary {
+    display: none;
+}
+
+.fatsecret_subheading {
+    display: none;
+}
+
+.fatsecret_servingentry {
+    display: none;
+}
+
+#fatsecret_servingselector {
+    width: 20px;
+    margin: 0;
+}
+
+/* nutrition panel */
+.fatsecret_nutritionpanel
+{
+	border: 2px solid #BCBCBC;
+	background-color: #FFF;
+}
+
+/* nutrition panel table */
+.fatsecret_nutrition_table
+{
+	border-collapse: collapse;
+	width: 98%;
+	margin: 0 auto;
+}
+
+/* search panel */
+/*
+.fatsecret_foodget_search
+{
+}
+*/
+
+/* search textbox */
+.fatsecret_foodget_search_input
+{
+	width: 50%;
+    margin: auto;
+	vertical-align: middle;
+}
+
+/* nutrition panel rows */
+.fatsecret_nutritionpanel tr
+{
+	line-height:13px;
+}
+
+/* nutrition panel cells */
+.fatsecret_nutritionpanel td
+{
+	color: #555;
+}
+
+/* item separator */
+.fatsecret_border_top
+{
+	border-top: 1px solid #BCBCBC;
+}
+
+/* main separator */
+.fatsecret_seperator
+{
+	background-color:#888;
+	line-height:5px;
+}
+
+
+.fatsecret_nutritionpanel .fatsecret_first_seperator, /* first main separator */
+.fatsecret_nutritionpanel .fatsecret_third_seperator /* third main separator */
+{
+	height: 5px;
+}
+
+/* second main separator */
+.fatsecret_second_seperator
+{
+	height: 2px;
+}
+
+/* nutrition panel header (Nutrition Facts) */
+.fatsecret_nutritionpanel_header
+{
+	font-size: 180%;
+	font-weight: 700;
+	line-height: 25px;
+	font-family: Arial Black;
+	letter-spacing: 1px;
+}
+
+.fatsecret_amount_per_serving, /* Amount per serving text */
+.fatsecret_daily_values /* % daily values text */
+{
+	font-size: 80%;
+}
+
+.fatsecret_amount_per_serving,
+.fatsecret_calories_label, /* calories label */
+.fatsecret_daily_values,
+.fatsecret_lvl_one_label, /* level one labels (Total Fat, Cholesterol, Sodium, etc) */
+.fatsecret_perc_value /* percentage values */
+{
+	font-weight: 700;
+}
+
+/* level one values */
+/*
+.fatsecret_lvl_one_value
+{
+}
+*/
+
+/* level two labels (Saturated Fat, PolySaturated Fat, Monounsaturated Fat, etc) */
+/*
+fatsecret_lvl_two_label
+{
+}
+*/
+
+/* level two values */
+/*
+fatsecret_lvl_two_value
+{
+}
+*/
+
+/* percentage character */
+/*
+.fatsecret_perc
+{
+}
+*/
+
+/* dot between Vitaman A/Vitamin C and Calcium/Iron */
+/*
+.fatsecret_dot
+{
+}
+*/
+
+/* Percent Daily Values disclaimer text */
+.fatsecret_nutritionpanel .fatsecret_perc_daily_note
+{
+	font-size: 75%;
+}
