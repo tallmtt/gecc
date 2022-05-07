@@ -136,31 +136,50 @@ a.reglinks {
 }
 
 .reference {
-	text-align: center;
+    text-align: center;
 }
 
 a {
-	color: white;
+    color: white;
+}
+
+.g-container {
+    max-width: 800px;
+    margin: auto;
 }
 
 /* -------------------------- */
 /* -- For Fat Secret stuff -- */
 /* -------------------------- */
 
-.fatsecret_subheading.fatsecret_home_heading {
-    display: none;
+/* Food items in search results */
+.fatsecret_borderbottom a {
+    color: #D3D3D3;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
-.fatsecret_home_summary {
-    display: none;
+.fatsecret_foodget a {
+    color: #2c3539;
+    text-decoration: underline;
 }
 
-.fatsecret_subheading {
-    display: none;
+.fatsecret_container {
+    max-width: 800px;
+    margin: auto;
 }
 
-.fatsecret_servingentry {
-    display: none;
+.fatsecret_container input.fatsecret_button {
+    font-size: 130%;
+    height: 1.7em;
+    width: auto;
+    font-weight: 500;
+    margin: 5px;
+    padding: 0 25px;
+}
+.fatsecret_button  {
+    color: #2c3539;
+    text-decoration: underline;
 }
 
 #fatsecret_servingselector {
@@ -168,32 +187,43 @@ a {
     margin: 0;
 }
 
+/* Change this color to same as bar to hide it */
+.fatsecret_heading {
+    color: #E6E6E6; /* Color change to hide text */
+}
+
+/* Add my own text before default text (hidden above) */
+.fatsecret_heading::before {
+    color: #2c3539  ;
+    content: 'Food Lookup:';
+    margin: 0 20px;
+}
+
+.fatsecret_borderbottom {
+    padding: 0.7em 0;
+}
+
 /* nutrition panel */
 .fatsecret_nutritionpanel
 {
-	border: 2px solid #BCBCBC;
-	background-color: #FFF;
+    border: 2px solid #BCBCBC;
+    background-color: #FFF;
 }
 
 /* nutrition panel table */
 .fatsecret_nutrition_table
 {
-	border-collapse: collapse;
-	width: 98%;
-	margin: 0 auto;
+    border-collapse: collapse;
+    width: 98%;
+    margin: 0 auto;
 }
 
 /* search panel */
-/*
-.fatsecret_foodget_search
-{
-}
-*/
 
 /* search textbox */
 .fatsecret_foodget_search_input
 {
-	width: 50%;
+	width: 100%;
     margin: auto;
 	vertical-align: middle;
 }
@@ -261,43 +291,28 @@ a {
 	font-weight: 700;
 }
 
-/* level one values */
-/*
-.fatsecret_lvl_one_value
-{
-}
-*/
-
-/* level two labels (Saturated Fat, PolySaturated Fat, Monounsaturated Fat, etc) */
-/*
-fatsecret_lvl_two_label
-{
-}
-*/
-
-/* level two values */
-/*
-fatsecret_lvl_two_value
-{
-}
-*/
-
-/* percentage character */
-/*
-.fatsecret_perc
-{
-}
-*/
-
-/* dot between Vitaman A/Vitamin C and Calcium/Iron */
-/*
-.fatsecret_dot
-{
-}
-*/
-
 /* Percent Daily Values disclaimer text */
 .fatsecret_nutritionpanel .fatsecret_perc_daily_note
 {
 	font-size: 75%;
+}
+
+/* ---------- */
+/* Hide Stuff */
+/* ---------- */
+
+.fatsecret_subheading.fatsecret_home_heading {
+    display: none;
+}
+
+.fatsecret_home_summary {
+    display: none;
+}
+
+.fatsecret_subheading {
+    display: none;
+}
+
+.fatsecret_servingentry {
+    display: none;
 }
