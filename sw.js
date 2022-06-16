@@ -20,7 +20,8 @@ self.addEventListener("install", (evt) => {
 // (C) CACHE STRATEGY
 self.addEventListener("fetch", (evt) => {
   // (C1) LOAD FROM CACHE FIRST, FALLBACK TO NETWORK IF NOT FOUND
-  event.respondWith(
+  evt.respondWith(
+//  event.respondWith(
     caches.match(evt.request)
     .then((res) => { return res || fetch(evt.request); })
   );
