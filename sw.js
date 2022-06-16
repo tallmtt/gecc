@@ -9,26 +9,30 @@ cFiles = [
 ];
 
 // (B) CREATE/INSTALL CACHE
-self.addEventListener("install", (evt) => {
+self.addEventListener("install", function(evt) => {
+  console.log('[ServiceWorker] Install');
   evt.waitUntil(
     caches.open(cName)
-    .then((cache) => { return cache.addAll(cFiles); })
+    .then((cache) => {
+		console.log('[ServiceWorker] Caching app shell');
+		return cache.addAll(cFiles); 
+		})
     .catch((err) => { console.error(err) })
   );
 });
 
 // (C) CACHE STRATEGY
-self.addEventListener("fetch", (evt) => {
+self.addEventListener("fetch", (event) => {
   // (C1) LOAD FROM CACHE FIRST, FALLBACK TO NETWORK IF NOT FOUND
-  evt.respondWith(
+  event.respondWith(
 //  event.respondWith(
-    caches.match(evt.request)
-    .then((res) => { return res || fetch(evt.request); })
+    caches.match(event.request)
+    .then((res) => { return res || fetch(event.request); })
   );
 
   /* (C2) LOAD WITH NETWORK FIRST, FALLBACK TO CACHE IF OFFLINE
-  evt.respondWith(
-    fetch(evt.request)
-    .catch(() => { return caches.match(evt.request); })
+  event.respondWith(
+    fetch(event.request)
+    .catch(() => { return caches.match(event.request); })
   );*/
 });
