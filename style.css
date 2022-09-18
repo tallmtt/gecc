@@ -61,6 +61,14 @@ h3 {
 	text-shadow: 2px 2px 5px grey;
 }
 
+#footer {
+    text-align: center;
+    margin: 1em;
+}
+#footer a {
+    text-decoration: none;
+}
+
 .controls {
   background-color: #4CAF50; /* Green */
   border: none;
