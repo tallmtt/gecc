@@ -61,12 +61,32 @@ h3 {
 	text-shadow: 2px 2px 5px grey;
 }
 
+/*
 #footer {
     text-align: center;
     margin: 1em;
 }
 #footer a {
     text-align: center;
+    text-decoration: none;
+}
+*/
+
+#footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+/*   background-color: #d5ecf5;*/
+   color: white;
+   text-align: right;
+/*   margin: 1em;*/
+}
+
+#footer a {
+	margin: 2em;
+	padding: 1em;
+    text-align: right;
     text-decoration: none;
 }
 
