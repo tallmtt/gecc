@@ -1,5 +1,5 @@
-// (A) FILES TO CACHE
 const cName = "gecc",
+const version = "1.1"
 
 cFiles = [
   "index.html",
