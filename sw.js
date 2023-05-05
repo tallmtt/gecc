@@ -1,5 +1,5 @@
 const cName = "gecc",
-const version = "1.101"
+const version = "1.102"
 
 cFiles = [
   "index.html",
