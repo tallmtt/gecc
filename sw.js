@@ -1,5 +1,5 @@
 const cName = "gecc",
-const version = "1.102"
+const version = "1.103"
 
 cFiles = [
   "index.html",
@@ -16,7 +16,7 @@ self.addEventListener("install", function(evt) => {
     caches.open(cName)
     .then((cache) => {
 		console.log('[ServiceWorker] Caching app shell');
-		return cache.addAll(cFiles); 
+		return cache.addAll(cFiles);
 		})
     .catch((err) => { console.error(err) })
   );
