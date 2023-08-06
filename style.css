@@ -32,7 +32,7 @@ h3 {
   background: #D3D3D3; /* Gunmetal */
   color: #2c3539;
 /*  padding: 20px; */
-  width: 250px; 
+  width: 250px;
 /*  height: 150px;  */
 }
 
@@ -88,6 +88,10 @@ h3 {
 	padding: 1em;
     text-align: right;
     text-decoration: none;
+}
+
+#footer p {
+    text-align: center;
 }
 
 .controls {
